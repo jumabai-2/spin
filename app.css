@@ -1,0 +1,60 @@
+.spin-container{
+    max-width: 800px;
+    border: 1px solid white;
+    padding:200px;
+    margin: 40px auto;
+    text-align: center;
+    background-color: yellowgreen;
+}
+h1{
+    color: wheat;
+}
+.spin{
+    width: 54px;
+    /* height: 54px; */
+    height: 152px;
+    border: 3px solid rgb(42,41,41);
+    position: relative;
+    font-size: 45px;
+    overflow: hidden;
+}
+.spin-line{
+    width: 54px;
+    /* height: 170px; */
+    height: 278px;
+    position: relative;
+    top: -54px;
+    background:yellow ;
+}
+
+.spin-line > div{
+    user-select: none;
+}
+button{
+    border:none;
+    background: aqua;
+    border-radius: 10%;
+    padding: 15px 25px;
+    align-items: center;
+    color: white;
+    font-size: 15px;
+    margin: 20px;
+}
+.animation-remove{
+    background-color: yellow;
+    animation-name:removeElement;
+    animation-duration: 300m;
+    animation-fill-mode: forwards;
+
+}
+@keyframes removeElement {
+    0%{
+        height:54px;
+        font-size: 45px;
+    }
+    100%{
+        height:0;
+        font-size: 0;
+        display: none;
+    }
+}
